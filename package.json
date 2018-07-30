@@ -1,0 +1,27 @@
+{
+  "name": "zupport-rest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rooshan Akthar",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- index.js",
+    "prod": "babel-node --require dotenv/config -- index.js",
+    "build": "babel -s true src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "firebase-admin": "^5.13.1",
+    "lowdb": "^1.0.0",
+    "nedb": "^1.8.0",
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.1",
+    "shortid": "^2.2.12"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.3"
+  }
+}
